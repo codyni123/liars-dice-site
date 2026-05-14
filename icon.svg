@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 240 240">
+  <defs>
+    <radialGradient id="bg" cx="0.7" cy="0.1" r="0.95">
+      <stop offset="0" stop-color="#fdf6eb"/>
+      <stop offset="0.7" stop-color="#ead9c6"/>
+      <stop offset="1" stop-color="#d8c2a4"/>
+    </radialGradient>
+    <linearGradient id="cupBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.00" stop-color="#101010"/>
+      <stop offset="0.22" stop-color="#323232"/>
+      <stop offset="0.58" stop-color="#181818"/>
+      <stop offset="0.86" stop-color="#222222"/>
+      <stop offset="1.00" stop-color="#101010"/>
+    </linearGradient>
+    <radialGradient id="closedFace" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#3c3c3c"/>
+      <stop offset="1" stop-color="#1f1f1f"/>
+    </radialGradient>
+    <linearGradient id="dieFace" x1="0" y1="0" x2="0.34" y2="1">
+      <stop offset="0" stop-color="#fffefb"/>
+      <stop offset="1" stop-color="#f3e8d1"/>
+    </linearGradient>
+    <radialGradient id="pipShade" cx="0.5" cy="0.35" r="0.65">
+      <stop offset="0" stop-color="rgba(255,255,255,0.22)"/>
+      <stop offset="0.55" stop-color="rgba(0,0,0,0)"/>
+      <stop offset="1" stop-color="rgba(0,0,0,0.40)"/>
+    </radialGradient>
+    <filter id="cupShadow" x="-25%" y="-15%" width="150%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#1a1208" flood-opacity="0.32"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#1a1208" flood-opacity="0.24"/>
+    </filter>
+    <filter id="dieShadow" x="-25%" y="-15%" width="150%" height="140%">
+      <feDropShadow dx="0" dy="0.6" stdDeviation="0.8" flood-color="#5e4828" flood-opacity="0.22"/>
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#5e4828" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g transform="translate(5 14)">
+    <g filter="url(#cupShadow)">
+      <path d="M 38.25,53.96 C 38.25,35.20 65.89,20 100,20 C 134.11,20 161.75,35.20 161.75,53.96 L 161.75,161.04 C 161.75,179.80 134.11,195 100,195 C 65.89,195 38.25,179.80 38.25,161.04 L 38.25,53.96 Z" fill="url(#cupBody)"/>
+    </g>
+    <ellipse cx="100" cy="53.96" rx="56.81" ry="28.87" fill="url(#closedFace)"/>
+    <ellipse cx="100" cy="53.96" rx="61.75" ry="33.96" fill="none" stroke="#777777" stroke-width="1"/>
+    <g transform="rotate(5 180 160)">
+      <g filter="url(#dieShadow)">
+        <rect x="145" y="125" width="70" height="70" rx="15.4" ry="15.4" fill="url(#dieFace)"/>
+      </g>
+      <rect x="145" y="125" width="70" height="70" rx="15.4" ry="15.4" fill="none" stroke="rgba(180,150,110,0.45)" stroke-width="0.5"/>
+      <circle cx="163.9" cy="144.93" r="5.74" fill="rgba(0,0,0,0.10)"/>
+      <circle cx="163.9" cy="143.9" r="5.74" fill="#1a1411"/>
+      <circle cx="163.9" cy="143.9" r="5.74" fill="url(#pipShade)"/>
+      <circle cx="196.1" cy="144.93" r="5.74" fill="rgba(0,0,0,0.10)"/>
+      <circle cx="196.1" cy="143.9" r="5.74" fill="#1a1411"/>
+      <circle cx="196.1" cy="143.9" r="5.74" fill="url(#pipShade)"/>
+      <circle cx="180" cy="161.03" r="5.74" fill="rgba(0,0,0,0.10)"/>
+      <circle cx="180" cy="160" r="5.74" fill="#c87456"/>
+      <circle cx="180" cy="160" r="5.74" fill="url(#pipShade)"/>
+      <circle cx="163.9" cy="177.13" r="5.74" fill="rgba(0,0,0,0.10)"/>
+      <circle cx="163.9" cy="176.1" r="5.74" fill="#1a1411"/>
+      <circle cx="163.9" cy="176.1" r="5.74" fill="url(#pipShade)"/>
+      <circle cx="196.1" cy="177.13" r="5.74" fill="rgba(0,0,0,0.10)"/>
+      <circle cx="196.1" cy="176.1" r="5.74" fill="#1a1411"/>
+      <circle cx="196.1" cy="176.1" r="5.74" fill="url(#pipShade)"/>
+    </g>
+  </g>
+</svg>

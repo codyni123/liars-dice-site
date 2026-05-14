@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support — Liar's Dice</title>
+  <meta name="description" content="Help, FAQs, and contact for the Liar's Dice iOS app.">
+  <meta property="og:title" content="Liar's Dice — Support">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/liars-dice-site/favicon.svg">
+  <link rel="stylesheet" href="/liars-dice-site/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="top">
+      <a href="/liars-dice-site/">← Liar's Dice</a>
+      <span class="muted small">Support</span>
+    </nav>
+
+    <header class="hero">
+      <div class="eyebrow">Help &amp; Contact</div>
+      <h1>Support</h1>
+      <p class="lede">Most questions are answered below. If you don't find what you need, email the developer — every message goes to a real human.</p>
+    </header>
+
+    <div class="contact-card">
+      <span class="label">Contact</span>
+      <a class="email" href="mailto:codyni123@gmail.com?subject=Liar%27s%20Dice%20Support">codyni123@gmail.com</a>
+      <span class="meta">Typical response time: within 2 business days. Include your iOS version, device model, and the build number from Settings → About for fastest help.</span>
+    </div>
+
+    <h2>How to play</h2>
+    <dl class="faq">
+      <dt>I've never played Liar's Dice before. What are the rules?</dt>
+      <dd>
+        <p>Each player starts with five dice in a private cup. Everyone rolls and peeks. The starting player bids on how many dice of a given face value exist across <em>everyone's</em> cups combined — e.g., "three 4s." Play passes clockwise. On your turn you must either raise the bid (higher quantity, or same quantity with a higher face) or call the previous player a liar.</p>
+        <p>When someone calls liar, all cups lift and dice are counted. If there are at least as many as the bid claimed, the challenger loses a die. If not, the bidder loses a die. <strong>1s are wild</strong> — they count toward any face value except when the bid itself is on 1s.</p>
+        <p>Lose all five dice and you're out. Last player standing wins. The app has a full "How to Play" walkthrough on the home screen.</p>
+      </dd>
+
+      <dt>What does "1s are wild" mean exactly?</dt>
+      <dd>If someone bids "four 5s," the count includes actual 5s plus actual 1s — both contribute. The one exception: when the bid itself is on 1s (e.g., "two 1s"), only actual 1s count. There's also a special rule for switching <em>between</em> a face bid and a 1s bid — the app enforces it automatically so you can't make an illegal raise.</dd>
+
+      <dt>The bid composer won't let me pick a number. Why?</dt>
+      <dd>The composer only allows <em>legal</em> raises. If a quantity or face value is dimmed, it would be an illegal bid given the previous player's bid. This is intentional — you can't accidentally make an invalid move.</dd>
+    </dl>
+
+    <h2>Multiplayer</h2>
+    <dl class="faq">
+      <dt>How do private rooms work?</dt>
+      <dd>The host taps <strong>Create Room</strong> and gets a 4-letter code (e.g., <code>BRAK</code>). They share it however they like — text, AirDrop, in person. Friends tap <strong>Join Room</strong> and enter the code. Once 2 or more players are in the lobby, the host starts the game.</dd>
+
+      <dt>Why isn't my friend joining my room?</dt>
+      <dd>
+        <p>Both devices need to be signed into <strong>iCloud</strong> (each player uses their own Apple ID — they don't need to share an account). The app uses Apple's CloudKit service to sync the room between devices, which requires an active iCloud account on each phone.</p>
+        <p>Check both devices: Settings → tap your name at the top → confirm signed in. Also confirm both phones have internet. If it still doesn't work, force-quit and reopen the app on the joining device — that retries the CloudKit connection.</p>
+      </dd>
+
+      <dt>The room code uses letters but I see what looks like an O — is that allowed?</dt>
+      <dd>Codes never include the letters <strong>O</strong>, <strong>I</strong>, or <strong>L</strong> because they look too much like 0 and 1. If your friend sees an "O," it's actually a different letter. Double-check the code with them.</dd>
+
+      <dt>What happens if I lose connection during a game?</dt>
+      <dd>You have 60 seconds to reconnect before the other players continue without you. If you miss two full turns, you're removed from the room. Your dice get auto-revealed in any pending challenges so the game can keep going.</dd>
+
+      <dt>Can I play across networks, or only on the same Wi-Fi?</dt>
+      <dd>Both work. Multiplayer runs on CloudKit so any two devices with internet can be in the same room — same table, different houses, different countries.</dd>
+    </dl>
+
+    <h2>Account &amp; data</h2>
+    <dl class="faq">
+      <dt>Do I need to make an account?</dt>
+      <dd>No. You pick a display name and avatar on first launch and start playing. Multiplayer uses your <em>existing</em> iCloud account behind the scenes; you don't create a separate Liar's Dice login.</dd>
+
+      <dt>What does Sign in with Apple do?</dt>
+      <dd>It's optional. Sign in only if you want your stats to follow you between your iPhone and iPad, or to survive a device reset. You can play fully anonymously forever if you prefer.</dd>
+
+      <dt>How do I back up my stats?</dt>
+      <dd>Stats live on-device by default. Use <strong>Sign in with Apple</strong> in the app's Settings to sync them to iCloud — they'll then appear on any device you sign in on.</dd>
+
+      <dt>How do I delete my data?</dt>
+      <dd>Uninstall the app to wipe all local data. If you used Sign in with Apple, go to iOS Settings → tap your name → Sign in with Apple → find Liar's Dice → <strong>Stop Using Apple ID</strong>. Email us if you want any CloudKit-side residue scrubbed.</dd>
+    </dl>
+
+    <h2>Bug reports &amp; feature requests</h2>
+    <dl class="faq">
+      <dt>I think I found a bug.</dt>
+      <dd>Email <a href="mailto:codyni123@gmail.com?subject=Liar%27s%20Dice%20Bug%20Report">codyni123@gmail.com</a> with: your iOS version, iPhone/iPad model, the build number from the app's Settings → About, and what you did right before the bug. Screenshots help a lot.</dd>
+
+      <dt>The game crashed. What now?</dt>
+      <dd>iOS automatically delivers anonymous crash reports via Apple's MetricKit framework, which the developer reviews in aggregate. No personal data is included. If you want to add context, email the approximate time of the crash so it can be matched to the report.</dd>
+
+      <dt>Can you add [feature]?</dt>
+      <dd>Maybe — send the request. The roadmap currently includes in-game emote reactions, multiple AI difficulties, and friends via Sign in with Apple. Big features like Android, real-money play, and ads are intentional non-goals.</dd>
+    </dl>
+
+    <h2>Accessibility</h2>
+    <dl class="faq">
+      <dt>Does it work with VoiceOver?</dt>
+      <dd>Yes. Every die, bid, and stat is labeled for VoiceOver. The bid composer announces what raises are legal as you scroll through quantities.</dd>
+
+      <dt>Does it support Reduce Motion?</dt>
+      <dd>Yes. Every animation has a static fallback — turn on Reduce Motion in iOS Settings and the dice reveal becomes a simple cross-fade instead of a flying-dice animation.</dd>
+
+      <dt>Can I make the text bigger?</dt>
+      <dd>Yes. The app respects iOS Dynamic Type — change the size in Settings → Display &amp; Brightness → Text Size, and the app's typography scales accordingly.</dd>
+
+      <dt>Where is dark mode?</dt>
+      <dd>Settings inside the app → Appearance. The app uses the warm cream "dawn" palette by default; dark mode is a deliberate opt-in rather than tied to your system setting.</dd>
+    </dl>
+
+    <h2>Devices &amp; system requirements</h2>
+    <dl class="faq">
+      <dt>What iOS versions are supported?</dt>
+      <dd>iOS 26.0 and later. The app uses the new Liquid Glass APIs, which are iOS 26-only.</dd>
+
+      <dt>Does it work on iPad?</dt>
+      <dd>Yes. Same app, same UI scaled up. iPad supports all four orientations; iPhone is portrait-only.</dd>
+
+      <dt>Does it work on Apple Watch, Mac, or Vision Pro?</dt>
+      <dd>Not at launch. iOS only. Android is a non-goal for v1.</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Still stuck?</h2>
+    <p>Email <a href="mailto:codyni123@gmail.com?subject=Liar%27s%20Dice%20Support">codyni123@gmail.com</a> and you'll hear back, usually within a couple of days.</p>
+
+    <footer>
+      <p>© 2026 Cody Ni.</p>
+      <p><a href="/liars-dice-site/">Home</a> · <a href="/liars-dice-site/privacy/">Privacy</a> · <a href="mailto:codyni123@gmail.com">Contact</a></p>
+    </footer>
+  </div>
+</body>
+</html>
