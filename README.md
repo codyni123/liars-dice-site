@@ -50,6 +50,8 @@ What's in place:
 - `canonical`, Open Graph and Twitter cards, `og.jpg`, `sitemap.xml` with `lastmod`, `robots.txt`, and `llms.txt` (a plain-Markdown summary for AI crawlers and answer engines).
 - Plain, crawlable HTML — nothing is rendered by JavaScript, so Googlebot, Bingbot, GPTBot, ClaudeBot and friends see the whole page.
 
+Google Search Console ownership is proven two ways — the `google4733d915db45d4de.html` file at the site root and the `google-site-verification` meta tag in every page's `<head>`. **Never delete either**, or the property loses verification.
+
 Two things only the account owner can do:
 
 1. **Google Search Console.** Add a URL-prefix property for `https://codyni123.github.io/liars-dice-site/`, verify with the HTML-tag method (paste the `google-site-verification` meta tag into the `<head>` of every page, or drop Google's HTML file in the repo root), then submit `sitemap.xml` and request indexing for the four URLs under URL Inspection. Google feeds Gemini.
