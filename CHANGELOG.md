@@ -7,6 +7,7 @@
 - Support page rewritten as a grouped FAQ; the only contact is a `mailto:` button, the address never appears as text.
 - Privacy policy rewritten (effective 2026-09-08) to cover optional purchases, Game Center, notifications and iCloud sync; MetricKit wording corrected.
 - SEO layer: keyword `<h1>`, structured data (Organization, WebSite, VideoGame/MobileApplication, FAQPage, Article, BreadcrumbList), canonical + Open Graph, `sitemap.xml`, `robots.txt`, `llms.txt`, `404.html`, social card and touch icon.
+- IndexNow key file at the site root so Bing-family engines can be pinged after each change.
 - Subtle motion (reveal-on-scroll, hero drift, cup lift) with a full `prefers-reduced-motion` fallback; mobile layout verified at 375/390px.
 
 ## 2026-05-14 — Initial site

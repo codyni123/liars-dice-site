@@ -55,6 +55,12 @@ Two things only the account owner can do:
 1. **Google Search Console.** Add a URL-prefix property for `https://codyni123.github.io/liars-dice-site/`, verify with the HTML-tag method (paste the `google-site-verification` meta tag into the `<head>` of every page, or drop Google's HTML file in the repo root), then submit `sitemap.xml` and request indexing for the four URLs under URL Inspection. Google feeds Gemini.
 2. **Bing Webmaster Tools.** Import the site from Search Console (one click) or verify the same way, and submit the sitemap. Bing feeds ChatGPT search and Copilot; Claude's web search and Perplexity crawl the open web directly and follow sitemaps too.
 
+IndexNow (Bing, Yandex and the engines behind ChatGPT search) is wired up: the key file `6aca7462c36e0ec0375117e6aea916be.txt` lives at the site root, so after any content change you can notify them with:
+
+```bash
+curl -s -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json; charset=utf-8" -d '{"host":"codyni123.github.io","key":"6aca7462c36e0ec0375117e6aea916be","keyLocation":"https://codyni123.github.io/liars-dice-site/6aca7462c36e0ec0375117e6aea916be.txt","urlList":["https://codyni123.github.io/liars-dice-site/","https://codyni123.github.io/liars-dice-site/how-to-play/","https://codyni123.github.io/liars-dice-site/support/","https://codyni123.github.io/liars-dice-site/privacy/"]}'
+```
+
 One caveat: crawlers read `robots.txt` and `llms.txt` only at the origin root (`https://codyni123.github.io/`), which is served by the separate `codyni123.github.io` repo. That root currently has no `robots.txt`, which means allow-all, so nothing blocks indexing. To point crawlers at this sitemap from the root, add a `robots.txt` to that repo with `Sitemap: https://codyni123.github.io/liars-dice-site/sitemap.xml`.
 
 ## Preview locally
