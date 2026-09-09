@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Liar's Dice — the bluffing dice game, free for iPhone &amp; iPad</title>
-<meta name="description" content="Liar's Dice is a free bluffing dice game for iPhone and iPad. Play solo against AI opponents with real personalities, pass one phone around the table, or open a private online room for up to six friends. No ads, no tracking.">
+<meta name="description" content="Liar's Dice is a free bluffing dice game for iPhone and iPad. Play solo against AI, pass one phone around the table, or open a private online room for six.">
 <link rel="canonical" href="https://codyni123.github.io/liars-dice-site/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="apple-itunes-app" content="app-id=6767948698">
 <meta name="theme-color" content="#f6f1ea">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -25,22 +26,91 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["VideoGame", "MobileApplication"],
+      "@type": "Organization",
+      "@id": "https://codyni123.github.io/liars-dice-site/#org",
+      "name": "Liar's Dice",
+      "url": "https://codyni123.github.io/liars-dice-site/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://codyni123.github.io/liars-dice-site/img/app-icon-512.png",
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://codyni123.github.io/liars-dice-site/#website",
+      "url": "https://codyni123.github.io/liars-dice-site/",
+      "name": "Liar's Dice",
+      "description": "The official site for the Liar's Dice iOS app: what it is, how to play, support and privacy.",
+      "publisher": {
+        "@id": "https://codyni123.github.io/liars-dice-site/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": [
+        "VideoGame",
+        "MobileApplication"
+      ],
       "@id": "https://codyni123.github.io/liars-dice-site/#app",
       "name": "Liar's Dice",
-      "alternateName": "Liar's Dice: Play with Friends",
+      "alternateName": [
+        "Liar's Dice: Play with Friends",
+        "Liars Dice",
+        "Dudo"
+      ],
       "url": "https://codyni123.github.io/liars-dice-site/",
       "image": "https://codyni123.github.io/liars-dice-site/img/og.jpg",
+      "screenshot": [
+        "https://codyni123.github.io/liars-dice-site/img/shots/bid.jpg",
+        "https://codyni123.github.io/liars-dice-site/img/shots/home.jpg",
+        "https://codyni123.github.io/liars-dice-site/img/shots/ai-setup.jpg",
+        "https://codyni123.github.io/liars-dice-site/img/shots/join-room.jpg"
+      ],
       "description": "A free bluffing dice game for iPhone and iPad. Everyone rolls five dice under a cup and only sees their own; players bid on how many dice of one face are on the whole table until someone calls liar. Play solo against AI opponents, pass one phone around the table, or open a private online room for up to six friends.",
+      "keywords": "liar's dice, liars dice, dudo, bluffing dice game, dice game app, iPhone dice game, multiplayer dice game",
       "operatingSystem": "iOS 26",
       "applicationCategory": "GameApplication",
-      "genre": ["Dice game", "Party game", "Bluffing game"],
-      "gamePlatform": ["iPhone", "iPad"],
-      "playMode": ["SinglePlayer", "MultiPlayer"],
-      "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 6 },
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "applicationSubCategory": "Dice game",
+      "genre": [
+        "Dice game",
+        "Party game",
+        "Bluffing game"
+      ],
+      "gamePlatform": [
+        "iPhone",
+        "iPad"
+      ],
+      "playMode": [
+        "SinglePlayer",
+        "MultiPlayer"
+      ],
+      "numberOfPlayers": {
+        "@type": "QuantitativeValue",
+        "minValue": 1,
+        "maxValue": 6
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
       "installUrl": "https://apps.apple.com/app/id6767948698",
-      "sameAs": ["https://apps.apple.com/app/id6767948698"]
+      "downloadUrl": "https://apps.apple.com/app/id6767948698",
+      "sameAs": [
+        "https://apps.apple.com/app/id6767948698"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Cody Ni"
+      },
+      "publisher": {
+        "@id": "https://codyni123.github.io/liars-dice-site/#org"
+      },
+      "inLanguage": "en",
+      "isAccessibleForFree": true
     },
     {
       "@type": "FAQPage",
@@ -49,32 +119,58 @@
         {
           "@type": "Question",
           "name": "What is Liar's Dice?",
-          "acceptedAnswer": { "@type": "Answer", "text": "A bluffing dice game for two to six players. Everyone rolls five dice under a cup and only sees their own. Players take turns bidding on how many dice of one face are on the whole table, and each bid has to top the last, until someone calls the previous player a liar. Cups lift, dice get counted, and whoever was wrong loses a die. The last player with dice wins. It's the game from pirate films and westerns, also known as Dudo." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A bluffing dice game for two to six players. Everyone rolls five dice under a cup and only sees their own. Players take turns bidding on how many dice of one face are on the whole table, and each bid has to top the last, until someone calls the previous player a liar. Cups lift, dice get counted, and whoever was wrong loses a die. The last player with dice wins. It's the game from pirate films and westerns, also known as Dudo."
+          }
         },
         {
           "@type": "Question",
           "name": "Is Liar's Dice free?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Liar's Dice is free on the App Store, with no ads and no tracking. Optional cosmetic themes, cup skins and reaction packs exist, plus a tip jar, but nothing you need to play is paid." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Liar's Dice is free on the App Store, with no ads and no tracking. Optional cosmetic themes, cup skins and reaction packs exist, plus a tip jar, but nothing you need to play is paid."
+          }
         },
         {
           "@type": "Question",
           "name": "Can I play Liar's Dice online with friends?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Create a private room and share its four-letter code. Up to six players join from their own iPhones or iPads, from anywhere with a connection. Each device needs to be signed in to iCloud, which is what carries the table between phones, but there's no separate account to create." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Create a private room and share its four-letter code. Up to six players join from their own iPhones or iPads, from anywhere with a connection. Each device needs to be signed in to iCloud, which is what carries the table between phones, but there's no separate account to create."
+          }
         },
         {
           "@type": "Question",
           "name": "Can I play Liar's Dice solo against AI?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Play vs AI seats two to six players with five characters who each play differently, at three difficulties from relaxed to ruthless. The AI is probability-aware and bluffs when it should." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Play vs AI seats two to six players with five characters who each play differently, at three difficulties from relaxed to ruthless. The AI is probability-aware and bluffs when it should."
+          }
         },
         {
           "@type": "Question",
           "name": "Can we play Liar's Dice on one phone?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Play in Person has two modes: pass one phone around the table, with hold-to-peek keeping each hand private, or everyone uses their own phone as a private dice cup and bids out loud." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Play in Person has two modes: pass one phone around the table, with hold-to-peek keeping each hand private, or everyone uses their own phone as a private dice cup and bids out loud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What other names does Liar's Dice go by?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dudo — its name in Peru and Chile, where the game comes from — and Cachito. It's also the dice game you've seen played in pirate films and westerns. Whatever the table calls it, the app plays the classic rules."
+          }
         },
         {
           "@type": "Question",
           "name": "Which devices does Liar's Dice run on?",
-          "acceptedAnswer": { "@type": "Answer", "text": "iPhone and iPad running iOS 26 or later. There is no Android, Mac or Apple Watch version." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone and iPad running iOS 26 or later. There is no Android, Mac or Apple Watch version."
+          }
         }
       ]
     }
@@ -130,8 +226,8 @@
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="shell">
     <div class="hero-copy">
-      <p class="eyebrow rv">A bluffing dice game for iPhone &amp; iPad</p>
-      <h1 class="rv">Five dice.<br>One bid.<br><span class="accent">Somebody's lying.</span></h1>
+      <h1 class="eyebrow rv">Liar's Dice — a bluffing dice game for iPhone &amp; iPad</h1>
+      <p class="statement rv">Five dice.<br>One bid.<br><span class="accent">Somebody's lying.</span></p>
       <p class="tagline rv d1">
         The dice game you play around a kitchen table, built to feel like it belongs on your phone.
         Bid on what's hiding under every cup, raise the stakes, and call the liar —
@@ -171,7 +267,7 @@
   <p class="ladder-caption">One round, start to finish. Every bid must top the last — <b>more dice</b>, or the same count of a <b>higher face</b> — until somebody calls it.</p>
 </div>
 
-<section class="block">
+<section class="block" id="the-game">
   <div class="shell">
     <p class="eyebrow rv">The game</p>
     <h2 class="headline rv">Everyone's dice. Only your cup.</h2>
@@ -238,7 +334,7 @@
   </div>
 </section>
 
-<section class="arena">
+<section class="arena" id="in-person">
   <div class="glow" aria-hidden="true"></div>
   <div class="shell">
     <div>
@@ -263,7 +359,7 @@
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="inside-the-app">
   <div class="shell">
     <p class="eyebrow rv">Inside the app</p>
     <h2 class="headline rv">Built like a first-party game.</h2>
@@ -309,7 +405,7 @@
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="getting-started">
   <div class="shell">
     <p class="eyebrow rv">Getting started</p>
     <h2 class="headline rv">From first roll to full table.</h2>
@@ -376,7 +472,7 @@
   </div>
 </section>
 
-<section class="block">
+<section class="block" id="faq">
   <div class="shell">
     <p class="eyebrow rv">Questions</p>
     <h2 class="headline rv">Asked at every table.</h2>
@@ -413,6 +509,12 @@
         <p>Yes. <strong>Play in Person</strong> has two modes: pass one phone around the table, with
         hold-to-peek keeping each hand private, or everyone uses their own phone as a private dice cup
         and bids out loud.</p>
+      </details>
+      <details>
+        <summary>What other names does Liar's Dice go by?</summary>
+        <p><strong>Dudo</strong> — its name in Peru and Chile, where the game comes from — and Cachito. It's
+        also the dice game you've seen played in pirate films and westerns. Whatever the table calls it,
+        the app plays the classic rules.</p>
       </details>
       <details>
         <summary>Which devices does it run on?</summary>

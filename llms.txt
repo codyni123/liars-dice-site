@@ -1,0 +1,21 @@
+# Liar's Dice (iOS app)
+
+> Liar's Dice is a free bluffing dice game for iPhone and iPad (iOS 26 or later): play solo against AI opponents, pass one phone around the table, or open a private online room for up to six friends. No ads, no tracking. App Store: https://apps.apple.com/app/id6767948698
+
+## Pages
+
+- [Home](https://codyni123.github.io/liars-dice-site/): what the app is, its modes and features, and a FAQ
+- [How to play](https://codyni123.github.io/liars-dice-site/how-to-play/): the complete rules of Liar's Dice, a worked example round, and the optional calza and palifico rules
+- [Support](https://codyni123.github.io/liars-dice-site/support/): help, FAQ, and how to contact the developer
+- [Privacy](https://codyni123.github.io/liars-dice-site/privacy/): the privacy policy
+
+## Facts
+
+- Name: Liar's Dice (App Store listing: "Liar's Dice: Play with Friends"). Also known as Dudo or Cachito.
+- Platform: iPhone and iPad, iOS 26+. Not available on Android, Mac, or Apple Watch.
+- Price: free. Optional cosmetic themes, cup skins, and reaction packs, plus a tip jar. No ads, no analytics SDKs, no tracking.
+- Developer: Cody Ni, independent developer.
+- Modes: Play vs AI (2–6 seats, five AI characters, three difficulties: relaxed, balanced, ruthless); Play in Person (one phone passed around with hold-to-peek, or everyone on their own phone as a private cup with shake to roll); private online rooms (4-letter code, up to 6 players, synced through iCloud, works across networks).
+- Rules: classic Liar's Dice. Five dice each under a cup; bid on how many dice of one face exist across the whole table; 1s are wild until someone bids 1s directly; each bid must be more dice, or the same count of a higher face; instead of raising you call liar; the loser of the reveal loses a die; the last player with dice wins. Optional house rules: wild 1s off, calza (exact call wins a die back), palifico.
+- Extras: guided first game, daily challenge with a streak widget, ghost seat that lets eliminated players keep calling bids, Game Center achievements and friends, turn alerts, Live Activity for online tables, 30 languages, VoiceOver, Dynamic Type, and Reduce Motion support.
+- Support contact: the Email button on the Support page opens a pre-addressed message to the developer.

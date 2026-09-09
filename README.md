@@ -41,6 +41,22 @@ Edit the files, commit, push `main` — GitHub Pages redeploys within about a mi
 - **Screenshots** come from `marketing/screenshots/public/screenshots/apple/iphone/en/` in the app repo (1206×2622 captures with the 9:41 status bar), downscaled with Pillow to 750px JPEG.
 - **Motion** is limited to reveal-on-scroll, a slow drift on the hero pieces, and the cup lift in the reveal tile; all of it is disabled under `prefers-reduced-motion`.
 
+## SEO and AI discoverability
+
+What's in place:
+
+- Keyword-bearing `<title>`, meta description, and a real `<h1>` ("Liar's Dice — a bluffing dice game for iPhone & iPad") on the landing page; the big statement below it is a styled paragraph.
+- JSON-LD on every page: `Organization` + `WebSite` + `VideoGame`/`MobileApplication` + `FAQPage` on the home page, `Article` on the rules page, `BreadcrumbList` on the inner pages. The FAQ markup mirrors the visible FAQ word for word.
+- `canonical`, Open Graph and Twitter cards, `og.jpg`, `sitemap.xml` with `lastmod`, `robots.txt`, and `llms.txt` (a plain-Markdown summary for AI crawlers and answer engines).
+- Plain, crawlable HTML — nothing is rendered by JavaScript, so Googlebot, Bingbot, GPTBot, ClaudeBot and friends see the whole page.
+
+Two things only the account owner can do:
+
+1. **Google Search Console.** Add a URL-prefix property for `https://codyni123.github.io/liars-dice-site/`, verify with the HTML-tag method (paste the `google-site-verification` meta tag into the `<head>` of every page, or drop Google's HTML file in the repo root), then submit `sitemap.xml` and request indexing for the four URLs under URL Inspection. Google feeds Gemini.
+2. **Bing Webmaster Tools.** Import the site from Search Console (one click) or verify the same way, and submit the sitemap. Bing feeds ChatGPT search and Copilot; Claude's web search and Perplexity crawl the open web directly and follow sitemaps too.
+
+One caveat: crawlers read `robots.txt` and `llms.txt` only at the origin root (`https://codyni123.github.io/`), which is served by the separate `codyni123.github.io` repo. That root currently has no `robots.txt`, which means allow-all, so nothing blocks indexing. To point crawlers at this sitemap from the root, add a `robots.txt` to that repo with `Sitemap: https://codyni123.github.io/liars-dice-site/sitemap.xml`.
+
 ## Preview locally
 
 ```bash
