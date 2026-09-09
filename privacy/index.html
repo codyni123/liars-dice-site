@@ -1,111 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Liar's Dice</title>
-  <meta name="description" content="Privacy policy for the Liar's Dice iOS app. No analytics, no ads, no tracking.">
-  <meta property="og:title" content="Liar's Dice — Privacy Policy">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/svg+xml" href="/liars-dice-site/favicon.svg">
-  <link rel="stylesheet" href="/liars-dice-site/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Liar's Dice — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the Liar's Dice iOS app. No analytics SDKs, no ads, no tracking. What the app stores, what goes through your iCloud account, and which optional Apple services it uses.">
+<link rel="canonical" href="https://codyni123.github.io/liars-dice-site/privacy/">
+<meta name="theme-color" content="#f6f1ea">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../img/touch-icon.png">
+<meta property="og:title" content="Liar's Dice — Privacy Policy">
+<meta property="og:description" content="No analytics SDKs, no ads, no tracking. What the Liar's Dice app stores and which Apple services it uses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://codyni123.github.io/liars-dice-site/privacy/">
+<meta property="og:image" content="https://codyni123.github.io/liars-dice-site/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <div class="wrap">
-    <nav class="top">
-      <a href="/liars-dice-site/">← Liar's Dice</a>
-      <span class="muted small">Privacy</span>
-    </nav>
 
-    <header class="hero">
-      <div class="eyebrow">Effective May 14, 2026</div>
-      <h1>Privacy Policy</h1>
-      <p class="lede">Liar's Dice is designed privacy-first. No analytics SDKs, no advertising, no in-app purchases, no third-party tracking. This page explains what limited data the app does handle, and why.</p>
-    </header>
+<nav class="nav">
+  <div class="shell">
+    <a class="brand" href="../" aria-label="Liar's Dice home">
+      <span class="die mark" data-v="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <b>Liar's Dice</b>
+    </a>
+    <div class="links">
+      <a href="../how-to-play/">How to play</a>
+      <a href="../support/">Support</a>
+      <a class="get" href="https://apps.apple.com/app/id6767948698">Get the app</a>
+    </div>
+  </div>
+</nav>
 
-    <div class="tldr">
-      <div class="eyebrow">TL;DR</div>
-      <p>Your dice, stats, and gameplay live on your device. Multiplayer rooms ride on Apple's iCloud so different devices can stay in sync. Sign in with Apple is optional and only used to carry your stats across your own devices. We don't run analytics, sell data, advertise, or track you.</p>
+<div class="shell narrow">
+  <div class="page-head">
+    <p class="eyebrow">Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="intro">Liar's Dice is built privacy-first: no analytics SDKs, no advertising, no tracking. This page explains the little the app does handle, and why.</p>
+    <p class="stamp-date">Effective September 8, 2026 · replaces the May 14, 2026 version</p>
+  </div>
+
+  <main class="prose">
+    <div class="note">
+      <p><strong>The short version.</strong> Your dice, stats and game history live on your device and
+      in your own iCloud account. Online rooms run on Apple's iCloud so different phones can share a
+      table. Sign in with Apple, Game Center, notifications and purchases are all optional and all
+      handled by Apple. Nothing is sold, shared with advertisers, or used to track you.</p>
     </div>
 
     <h2>1. Who runs this app</h2>
-    <p>The Liar's Dice iOS app ("the app") is built and operated by <strong>Cody Ni</strong>, an independent developer ("we," "us"). Contact: <a href="mailto:codyni123@gmail.com">codyni123@gmail.com</a>.</p>
+    <p>The Liar's Dice iOS app ("the app") is built and operated by <strong>Cody Ni</strong>, an
+    independent developer ("I", "me"). You can reach me by email using the button at the end of this
+    page.</p>
 
-    <h2>2. What data the app handles</h2>
-
-    <h3>Stored on your device</h3>
+    <h2>2. What the app stores on your device</h2>
     <ul>
       <li>Your chosen display name and avatar.</li>
-      <li>Your local game stats (games played, win rate, streaks, etc.).</li>
-      <li>App preferences (sound, haptics, appearance).</li>
+      <li>Your game history and stats — games played, wins, streaks, achievements progress.</li>
+      <li>Preferences: sound, haptics, theme, house rules, notification choices.</li>
+      <li>Which optional themes, cup skins and reaction packs you've unlocked.</li>
+      <li>A <strong>random player identifier</strong>, generated on the device and kept in the Keychain. It
+      identifies your seat at online tables and in your friends list. It is not derived from your Apple
+      Account, name or email, and it never leaves the device except as part of an online room.</li>
+      <li>A small snapshot of your daily streak, shared with the app's Home Screen and Lock Screen
+      widgets through a container that only the app and its widgets can read.</li>
     </ul>
-    <p>This data never leaves your device unless you opt into Sign in with Apple (below).</p>
 
-    <h3>Multiplayer (Apple's CloudKit)</h3>
-    <p>When you create or join a private multiplayer room, the app uses Apple's <strong>CloudKit</strong> service to synchronize game state — the room code, player list, current bids, and dice states — between the devices in that room. CloudKit data is associated with your Apple ID and managed by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>. We do not have direct access to your Apple ID, name, or email through CloudKit.</p>
-    <p>Active rooms are temporary. Rooms auto-close after 5 minutes of lobby inactivity, and finished games are cleaned up automatically.</p>
+    <h2>3. iCloud — your own private storage</h2>
+    <p>Game history and stats sync between your devices through <strong>iCloud's private database</strong>,
+    tied to your Apple Account and encrypted by Apple. Your theme choice syncs the same way through
+    iCloud key-value storage. This data is visible only to your own devices; I have no way to read it.
+    You can stop syncing at any time by turning iCloud off for Liar's Dice in iOS Settings, and you can
+    delete what's stored under Settings → your name → iCloud → Manage Account Storage.</p>
 
-    <h3>Sign in with Apple (optional)</h3>
-    <p>If — and only if — you tap "Sign in with Apple" in the app's Settings, we receive an anonymous Apple-issued user identifier. We use it for one purpose: to associate your stats with your account so they sync across your own iPhone and iPad. We do not request or store your name or email through Sign in with Apple. You can stop using Sign in with Apple at any time from iOS Settings.</p>
+    <h2>4. Multiplayer rooms</h2>
+    <p>When you create or join a private room, the app uses Apple's <strong>CloudKit</strong> service to
+    share the table between the devices in that room: the room code, each player's display name and
+    avatar, the random player identifier above, bids, dice, reactions and turn state. This is the only
+    reason the app needs you to be signed in to iCloud, and the only data that leaves your device while
+    you play online. Anyone who has the four-letter code can join while the room is open, which is what
+    makes rooms shareable — treat the code like an invitation.</p>
+    <p>Rooms are temporary and cleaned up automatically once the game ends or the lobby goes idle. I do
+    not receive your Apple ID, name, email or any account details through CloudKit, and CloudKit data is
+    handled by Apple under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy
+    Policy</a>.</p>
 
-    <h3>Crash reports (Apple's MetricKit)</h3>
-    <p>The app uses Apple's MetricKit framework, which delivers aggregated, anonymous diagnostic and crash reports. These reports help us find and fix bugs. They do not include personal information.</p>
+    <h2>5. Optional Apple services</h2>
+    <p>Everything in this section is off until you choose to use it, and each one is run by Apple under
+    Apple's own privacy policy. The app never adds a third-party service on top.</p>
 
-    <h2>3. What the app does NOT do</h2>
+    <h3>Sign in with Apple</h3>
+    <p>If you tap Sign in with Apple, Apple gives the app an anonymous user identifier and, on the first
+    sign-in, your name and an email address (which may be Apple's private relay address). The app keeps
+    your <strong>first name</strong> on the device to use as your display name. The email address is not
+    stored, displayed or used. You can stop using Sign in with Apple for Liar's Dice at any time from iOS
+    Settings → your name → Sign-In &amp; Security.</p>
+
+    <h3>Game Center</h3>
+    <p>If you're signed in to Game Center, the app can report your <strong>achievements</strong>, submit
+    your win count to an all-time leaderboard, and read your Game Center friends list to show you which
+    of your friends play, so you can invite them to a table. Your Game Center nickname and avatar are
+    Apple's; the app displays them but does not store them anywhere else. Turn Game Center off in iOS
+    Settings and none of this happens.</p>
+
+    <h3>Notifications</h3>
+    <p>If you allow notifications, the app can tell you when it's your turn at an online table. Alerts are
+    delivered through Apple's push notification service using a device token that Apple issues; there is
+    no third-party push provider. A Live Activity for online tables is updated by the app on your device.
+    Switch alerts off in the app's Settings or in iOS Settings → Notifications.</p>
+
+    <h3>Purchases</h3>
+    <p>Optional themes, cup skins, reaction packs and tips are sold through Apple's <strong>App Store</strong>
+    (StoreKit). Apple processes the payment; the app never sees your payment details, and only checks
+    with Apple which items your Apple Account has unlocked. Restore Purchases in the app's store re-runs
+    that check.</p>
+
+    <h3>Crash and diagnostic reports</h3>
+    <p>If you've opted to share analytics with app developers in iOS Settings → Privacy &amp; Security →
+    Analytics &amp; Improvements, Apple sends me anonymous, aggregated crash reports for the app. They
+    contain no personal information. The app also collects Apple <strong>MetricKit</strong> diagnostics,
+    which are kept on your device only and are never uploaded.</p>
+
+    <h2>6. What the app does not do</h2>
     <ul>
-      <li>No third-party analytics SDKs (no Mixpanel, Amplitude, Firebase Analytics, etc.).</li>
+      <li>No third-party analytics SDKs — no Firebase, Mixpanel, Amplitude or anything like them.</li>
       <li>No advertising, no ad networks, no ad SDKs.</li>
-      <li>No in-app purchases or subscriptions.</li>
-      <li>No tracking across apps or websites — the app does not request the App Tracking Transparency permission because it has nothing to track.</li>
-      <li>No selling, renting, or sharing of personal data. Ever.</li>
-      <li>No location access. No contacts access. No microphone or camera access.</li>
-      <li>No newsletter list, no email harvesting.</li>
+      <li>No tracking across apps or websites. The app never shows the App Tracking Transparency prompt because it has nothing to track.</li>
+      <li>No selling, renting or sharing of personal data with anyone, for any purpose.</li>
+      <li>No access to your location, contacts, photos, camera or microphone.</li>
+      <li>No newsletter, no email list, no marketing messages.</li>
     </ul>
 
-    <h2>4. Data sharing</h2>
-    <p>We do not share your data with third parties for advertising, analytics, or any commercial purpose. The only data leaving your device is:</p>
+    <h2>7. Data sharing</h2>
+    <p>The only parties that ever handle data from the app are Apple's own services, in the ways described
+    above: iCloud and CloudKit, Sign in with Apple, Game Center, Apple Push Notification service, the App
+    Store, and Apple's crash reporting. Each is governed by Apple's privacy practices in addition to this
+    policy. There are no other recipients.</p>
+
+    <h2>8. Data retention</h2>
     <ul>
-      <li>Multiplayer game state sent to and from Apple's CloudKit, only while you're actively in a room.</li>
-      <li>Anonymous crash reports sent via Apple's MetricKit.</li>
-      <li>Your stats (if you opt into Sign in with Apple) synced via Apple's iCloud.</li>
-    </ul>
-    <p>All three travel via Apple's infrastructure and are governed by Apple's privacy practices in addition to ours.</p>
-
-    <h2>5. Data retention</h2>
-    <ul>
-      <li><strong>Local data</strong> persists until you delete the app or clear its data in iOS Settings.</li>
-      <li><strong>Multiplayer rooms</strong> are deleted automatically after they end or after 5 minutes of inactivity.</li>
-      <li><strong>Sign in with Apple synced stats</strong> persist until you stop using Sign in with Apple for this app (iOS Settings → your name → Sign in with Apple).</li>
-      <li><strong>Crash reports</strong> are retained per Apple's MetricKit policy.</li>
+      <li><strong>On your device</strong> — kept until you delete the app.</li>
+      <li><strong>In your iCloud account</strong> — kept until you delete it from iCloud storage settings or turn iCloud off for the app.</li>
+      <li><strong>Multiplayer rooms</strong> — deleted automatically when the game ends or the lobby goes idle.</li>
+      <li><strong>Game Center, Sign in with Apple, purchases and crash reports</strong> — retained by Apple under Apple's policies; each can be revoked or managed from iOS Settings.</li>
     </ul>
 
-    <h2>6. Children's privacy</h2>
-    <p>The app is rated 4+ and is appropriate for all ages. We do not knowingly collect personal information from children. Because the app does not collect personal data from anyone for advertising or analytics, this applies universally.</p>
+    <h2>9. Children's privacy</h2>
+    <p>The app is rated 4+ and suitable for all ages. It does not knowingly collect personal information
+    from children — and because it collects no personal data from anyone for advertising or analytics,
+    that holds for every player.</p>
 
-    <h2>7. Your rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li><strong>Access</strong> any data we hold — though the app stores virtually nothing server-side. Your data lives on your device and in Apple's iCloud, both of which you control directly.</li>
-      <li><strong>Delete</strong> your data — uninstall the app to wipe local data; revoke Sign in with Apple to remove your synced stats.</li>
-      <li><strong>Object</strong> to any processing — email us and we'll address concerns.</li>
-    </ul>
-    <p>If you are in the EU, UK, or California, you have additional rights under the GDPR and CCPA. Given that the app does not run analytics or collect personal data for commercial purposes, most of those rights are satisfied by deletion (uninstall) or by managing your iCloud account directly.</p>
+    <h2>10. Your rights</h2>
+    <p>You have the right to <strong>access</strong> the data held about you, to <strong>delete</strong> it,
+    and to <strong>object</strong> to any processing. Since the app stores nothing about you on servers I
+    run, most of that is in your own hands: delete the app to remove local data, manage iCloud storage
+    to remove synced data, and revoke Sign in with Apple or Game Center from iOS Settings. If you're in
+    the EU, UK or California you have additional rights under GDPR and CCPA, and I'll honour any request
+    — email me.</p>
 
-    <h2>8. Security</h2>
-    <p>All data leaving the device travels via encrypted Apple frameworks (CloudKit over HTTPS, iCloud-managed Sign in with Apple, MetricKit). On-device data is protected by iOS's standard data-protection mechanisms.</p>
+    <h2>11. Security</h2>
+    <p>All data leaving the device travels through Apple's encrypted frameworks — CloudKit over HTTPS,
+    iCloud, Sign in with Apple, Game Center, push notifications and StoreKit. On-device data is protected
+    by iOS's standard data protection, and the player identifier is kept in the Keychain.</p>
 
-    <h2>9. Changes to this policy</h2>
-    <p>If we change this policy, we'll update the effective date at the top of this page and, for material changes, surface a notice inside the app. We encourage you to check back occasionally.</p>
+    <h2>12. Changes to this policy</h2>
+    <p>If this policy changes, the effective date at the top of this page will change with it, and any
+    material change will be noted inside the app. It was last rewritten on September 8, 2026 to describe
+    the optional purchases, Game Center, notifications and iCloud sync added since the May 14, 2026
+    version.</p>
 
-    <h2>10. Contact</h2>
-    <p>Questions about privacy? Email <a href="mailto:codyni123@gmail.com?subject=Privacy%20-%20Liar%27s%20Dice">codyni123@gmail.com</a>.</p>
+    <h2>13. Contact</h2>
+    <div class="contact">
+      <p><b>Questions about privacy?</b>Email me and you'll hear back, usually within two days.</p>
+      <a class="mail" href="mailto:codyni123@gmail.com?subject=Privacy%20-%20Liar%27s%20Dice">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+        Email me
+      </a>
+    </div>
+  </main>
+</div>
 
-    <hr>
-
-    <footer>
-      <p>© 2026 Cody Ni. Effective May 14, 2026.</p>
-      <p><a href="/liars-dice-site/">Home</a> · <a href="/liars-dice-site/support/">Support</a> · <a href="mailto:codyni123@gmail.com">Contact</a></p>
-    </footer>
+<footer>
+  <div class="shell">
+    <a class="brand" href="../" aria-label="Liar's Dice home">
+      <span class="die mark" data-v="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+      <b>Liar's Dice</b>
+    </a>
+    <nav aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="../how-to-play/">How to play</a>
+      <a href="../support/">Support</a>
+      <a href="https://apps.apple.com/app/id6767948698">App Store</a>
+    </nav>
+    <p class="copy">© 2026 Liar's Dice</p>
   </div>
+</footer>
+
 </body>
 </html>
