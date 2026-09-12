@@ -13,6 +13,8 @@ Marketing, support, rules and privacy site for the [Liar's Dice](https://apps.ap
 
 Edit the files, commit, push `main` — GitHub Pages redeploys within about a minute.
 
+Every page carries the GA4 tag for the "Liar's Dice site" property (`G-HQY2RR5TW8`, same Google account as Search Console); copy the snippet from any page's `<head>` into new pages. The property is linked to the Search Console property.
+
 ```
 .
 ├── index.html            # Landing page
